@@ -1,0 +1,44 @@
+.App {
+  text-align: left;
+}
+
+.App-header {
+  background-color: #f7f7f7;
+  height: 150px;
+  padding: 20px 0px 80px 60px;
+  color: #fff;
+  font-family: 'Merriweather';
+  letter-spacing: 1.83px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid #bfbfbf;
+}
+
+.App-subheader {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.83px;
+  color: rgba(242, 38, 19, 0.65);
+}
+
+.App-title {
+  font-size: 3.5rem;
+  margin-bottom: 0.4rem;
+  background-color: rgba(242, 38, 19, 0.65);
+  width: 350px;
+  padding: 13px;
+  text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
