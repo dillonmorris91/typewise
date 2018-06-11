@@ -1,11 +1,14 @@
 .App {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .App-header {
   background-color: #f7f7f7;
   height: 150px;
-  padding: 20px 0px 80px 60px;
+  padding: 20px 0px 2rem 0rem;
   color: #fff;
   font-family: 'Merriweather';
   letter-spacing: 1.83px;
@@ -16,29 +19,118 @@
 
 .App-subheader {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 0.83px;
   color: rgba(242, 38, 19, 0.65);
+  text-align: center;
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
+  line-height: 1.4;
 }
 
 .App-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 0.4rem;
   background-color: rgba(242, 38, 19, 0.65);
-  width: 350px;
+  width: 300px;
+  text-align: center;
   padding: 13px;
   text-align: center;
+  margin: auto;
 }
 
-.App-intro {
-  font-size: large;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  margin-left: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-item {
+  font-family: Open Sans;
+  width: 80px;
+  font-size: 1.2rem;
+  color: #bfbfbf;
+}
+
+.navbar-item:last-child {
+  margin-right: 0.5rem;
+}
+
+.navbar-item:hover,
+.navbar-item:active {
+  color: rgba(242, 38, 19, 0.65);
+  cursor: pointer;
+}
+
+.card-container {
+  border-top: 3px solid #bfbfbf;
+  margin-top: 6px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+}
+
+.card {
+  box-sizing: border-box;
+  height: 19rem;
+  margin: 10px 5px;
+  padding: 10px 10px;
+  background-color: #fff;
+}
+
+/* tablet/mobile media query  */
+
+@media (min-width: 700px) {
+  .App-header {
+    padding-bottom: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-subheader {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .card-container {
+    display: flex;
+    padding-top: 1.25rem;
+  }
+
+  .card {
+    flex-basis: 48%;
+  }
+}
+
+/* desktop/laptop media query  */
+
+@media (min-width: 1000px) {
+  .App-header {
+    padding: 20px 0px 1rem 6rem;
+  }
+
+  .App-title {
+    margin-left: 0rem;
+  }
+
+  .App-subheader {
+    text-align: left;
+  }
+
+  .card-container {
+    display: flex;
+    padding: 1.25rem 4.5rem;
+  }
+
+  .card {
+    flex-basis: 30%;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+  }
+
+  .navbar-item:last-child {
+    margin-right: 4.8rem;
   }
 }
