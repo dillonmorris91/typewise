@@ -5,7 +5,7 @@ class FontCard extends React.Component {
   render() {
     return (
       <div className="card">
-        {this.props.title} // {this.props.type}
+        {this.props.title} {this.props.type}
       </div>
     );
   }

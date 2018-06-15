@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+}
+
 .App {
   text-align: left;
   display: flex;
@@ -59,7 +66,9 @@
 }
 
 .navbar-item:hover,
-.navbar-item:active {
+.navbar-item:active,
+.navbar-item:focus,
+.navbar-item:visited {
   color: rgba(242, 38, 19, 0.65);
   cursor: pointer;
 }
@@ -67,9 +76,9 @@
 .card-container {
   border-top: 3px solid #bfbfbf;
   margin-top: 6px;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  padding: 20px 10px;
+  padding: 1.25rem 1.25rem;
 }
 
 .card {
@@ -94,11 +103,11 @@
 
   .card-container {
     display: flex;
-    padding-top: 1.25rem;
+    padding: 1.25rem 0rem 0rem 3.5rem;
   }
 
   .card {
-    flex-basis: 48%;
+    flex-basis: 45%;
   }
 }
 
@@ -119,11 +128,14 @@
 
   .card-container {
     display: flex;
-    padding: 1.25rem 4.5rem;
+    padding: 1.25rem 5.5rem;
+    flex-grow: 1;
   }
 
   .card {
-    flex-basis: 30%;
+    flex-basis: 28%;
+    flex-grow: 1;
+    /* max-width: 30%; */
   }
 
   .navbar {
