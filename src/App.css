@@ -5,11 +5,45 @@ body {
   background-color: #f7f7f7;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/* END OF RESET CSS */
+
 .App {
+  font-family: 'Open Sans';
   text-align: left;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  padding-bottom: 1rem;
 }
 
 .App-header {
@@ -55,7 +89,7 @@ body {
 }
 
 .navbar-item {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   width: 80px;
   font-size: 1.2rem;
   color: #bfbfbf;
@@ -85,8 +119,61 @@ body {
   box-sizing: border-box;
   height: 19rem;
   margin: 10px 5px;
-  padding: 10px 10px;
+  padding-top: 10px;
   background-color: #fff;
+}
+
+.card-title {
+  color: #695f5e;
+  padding: 0.25rem 0 0 2rem;
+  font-size: 1rem;
+}
+
+.card-footer {
+  margin: 1rem 0 0 0;
+  padding: 0.75rem 0px;
+  border-top: 2px solid #ececec;
+  display: flex;
+  justify-content: center;
+}
+
+.card-text-container {
+  height: 56%;
+  padding: 0 2rem;
+}
+
+.card-text {
+  color: #303043;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  /* margin-bottom: 1rem; */
+}
+
+.card-btn {
+  font-size: 0.8rem;
+  background-color: #d8d8d8;
+  border: none;
+  margin: 0px 6px;
+  padding: 9px 22px;
+  display: flex;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.card-btn:hover {
+  color: rgba(242, 38, 19, 0.65);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-btn-right {
+  padding: 7px 28px;
 }
 
 /* tablet/mobile media query  */
@@ -108,6 +195,23 @@ body {
 
   .card {
     flex-basis: 45%;
+    padding-top: 0px;
+  }
+
+  .card-title {
+    padding: 0.25rem 0 0 2rem;
+  }
+
+  .card-btn {
+    font-size: 0.8rem;
+    background-color: #d8d8d8;
+    border: none;
+    margin: 0px 6px;
+    padding: 9px 22px;
+    display: flex;
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -128,14 +232,12 @@ body {
 
   .card-container {
     display: flex;
-    padding: 1.25rem 5.5rem;
+    padding: 1.25rem 4.5rem 0rem 5.5rem;
     flex-grow: 1;
   }
 
   .card {
-    flex-basis: 28%;
-    flex-grow: 1;
-    /* max-width: 30%; */
+    flex-basis: 32%;
   }
 
   .navbar {
@@ -144,5 +246,15 @@ body {
 
   .navbar-item:last-child {
     margin-right: 4.8rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .card-container {
+    padding-right: 4rem;
+  }
+
+  .card-btn {
+    margin: 0px 20px;
   }
 }

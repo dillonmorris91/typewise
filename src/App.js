@@ -60,7 +60,11 @@ class App extends Component {
                 title={font.title}
                 type={font.type}
                 key={font.title}
-                showCard={font.showCard}
+                fontFamily={font.fontFamily}
+                image={font.image}
+                sample={font.sample}
+                siteLink={font.siteLink}
+                downloadLink={font.downloadLink}
               />
             );
           })}
