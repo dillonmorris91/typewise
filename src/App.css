@@ -146,7 +146,7 @@ button,
 }
 
 .card-footer {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 1rem 0;
   padding: 0.75rem 0px;
   border-top: 2px solid #ececec;
   display: flex;
@@ -169,7 +169,7 @@ button,
   font-size: 0.8rem;
   background-color: rgba(242, 38, 19, 0.65);
   border: none;
-  margin: 0px 6px;
+  margin: -2px 6px;
   padding: 9px 22px;
   display: flex;
   color: #fff;
@@ -212,6 +212,10 @@ a {
     padding-top: 0px;
   }
 
+  .card-btn {
+    margin: 0px 6px;
+  }
+
   .card-title {
     padding: 0.25rem 0 0 2rem;
   }
@@ -240,6 +244,10 @@ a {
 
   .card {
     flex-basis: 32%;
+  }
+
+  .card-btn {
+    margin: 0px 6px;
   }
 
   .navbar {
