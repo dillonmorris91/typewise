@@ -5,6 +5,7 @@ import FontCard from './FontCard';
 class App extends Component {
   constructor(props) {
     super(props);
+    this.handleAllFontsClick = this.handleAllFontsClick.bind(this);
     this.handleSansClick = this.handleSansClick.bind(this);
     this.handleSerifClick = this.handleSerifClick.bind(this);
     this.handleDisplayClick = this.handleDisplayClick.bind(this);
@@ -12,8 +13,13 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const sansArray = fonts.filter(font => font.type === 'sans');
-    this.setState({ filteredFonts: sansArray });
+    const allFontsArray = fonts.map(font => font);
+    this.setState({ filteredFonts: allFontsArray });
+  }
+
+  handleAllFontsClick() {
+    const allFontsArray = fonts.map(font => font);
+    this.setState({ filteredFonts: allFontsArray });
   }
 
   handleSansClick() {
@@ -23,7 +29,7 @@ class App extends Component {
 
   handleSerifClick() {
     const serifArray = fonts.filter(font => font.type === 'serif');
-    this.setState({ filteredFonts: serifArray, color: 'blue' });
+    this.setState({ filteredFonts: serifArray });
   }
 
   handleDisplayClick() {
@@ -31,13 +37,17 @@ class App extends Component {
     this.setState({ filteredFonts: displayArray });
   }
 
+  addActiveState() {}
+
   render() {
     const filteredFonts = this.state.filteredFonts;
 
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Typewise</h1>
+          <h1 className="App-title" onClick={this.handleAllFontsClick}>
+            Typewise
+          </h1>
           <p className="App-subheader">
             A curated assortment of the best Google Fonts.
           </p>

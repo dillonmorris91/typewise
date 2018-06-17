@@ -2,8 +2,7 @@ const fonts = [
   {
     title: 'Roboto',
     type: 'sans',
-    sample:
-      "Here I stand head in hand, turn my face to the wall, if she's gone...",
+    sample: "Hey Jude, don't make it bad, take a sad song and make it better",
     siteLink: 'https://fonts.google.com/specimen/Roboto',
     downloadLink: 'http://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Me5Q.ttf'
   },
@@ -75,7 +74,7 @@ const fonts = [
   {
     title: 'Merriweather',
     type: 'display',
-    sample: 'If I could see you now, I’d try to make you sad somehow.',
+    sample: 'Woke up, got out of bed, dragged a comb across my head',
     siteLink: 'https://fonts.google.com/specimen/Merriweather',
     downloadLink:
       'http://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5Oew.ttf'
@@ -155,7 +154,7 @@ const fonts = [
   {
     title: 'Lobster',
     type: 'display',
-    sample: 'Sleep pretty darling do not cry and I will sing a lullaby.',
+    sample: 'I look at the floor and I see it needs sweeping',
     siteLink: 'https://fonts.google.com/specimen/Lobster',
     downloadLink:
       'http://fonts.gstatic.com/s/lobster/v20/neILzCirqoswsqX9_oU.ttf'
@@ -164,7 +163,7 @@ const fonts = [
   {
     title: 'Patua One',
     type: 'display',
-    sample: 'Remember to let her into your heart.',
+    sample: 'You were only waiting for this moment to arise',
     siteLink: 'https://fonts.google.com/specimen/Patua+One',
     downloadLink:
       'http://fonts.gstatic.com/s/patuaone/v7/ZXuke1cDvLCKLDcimxBI5A.ttf'
@@ -182,7 +181,7 @@ const fonts = [
   {
     title: 'Rozha One',
     type: 'display',
-    sample: 'Please please me, whoa yeah, like I please you.',
+    sample: 'Dear Sir or Madam, will you read my book?',
     siteLink: 'https://fonts.google.com/specimen/Rozha+One',
     downloadLink:
       'http://fonts.gstatic.com/s/rozhaone/v4/AlZy_zVFtYP12Zncg2khdQ.ttf'
@@ -191,7 +190,7 @@ const fonts = [
   {
     title: 'Ultra',
     type: 'display',
-    sample: 'While I’m away, I’ll write home everyday.',
+    sample: 'Got a good reason for taking the easy way out',
     siteLink: 'https://fonts.google.com/specimen/Ultra',
     downloadLink: 'http://fonts.gstatic.com/s/ultra/v10/zOLy4prXmrtY-tT6.ttf'
   },
@@ -226,7 +225,7 @@ const fonts = [
   {
     title: 'Overpass',
     type: 'sans',
-    sample: 'Eleanor Rigby, picks up the rice in the church...',
+    sample: 'Been away so long I hardly knew the place',
     siteLink: 'https://fonts.google.com/specimen/Overpass',
     downloadLink:
       'http://fonts.gstatic.com/s/overpass/v2/qFdH35WCmI96Ajtm82Gi.ttf'
@@ -244,7 +243,7 @@ const fonts = [
   {
     title: 'Old Standard TT',
     type: 'serif',
-    sample: "She's gotta ticket to ride, but she don't care",
+    sample: "I'd like to be under the sea in an octopus' garden in the shade ",
     siteLink: 'https://fonts.google.com/specimen/Old+Standard+TT',
     downloadLink:
       'http://fonts.gstatic.com/s/oldstandardtt/v9/MwQubh3o1vLImiwAVvYawgcf2eVurQ.ttf'
@@ -280,7 +279,7 @@ const fonts = [
   {
     title: 'Nunito Sans',
     type: 'sans',
-    sample: "When I call you up your line's engaged...",
+    sample: "Doesn't have a point of view knows not where he's going to",
     siteLink: 'https://fonts.google.com/specimen/Nunito+Sans',
     downloadLink:
       'http://fonts.gstatic.com/s/nunitosans/v3/pe0qMImSLYBIv1o4X1M8cfe6.ttf'
@@ -305,7 +304,7 @@ const fonts = [
   {
     title: 'Noto Serif',
     type: 'serif',
-    sample: 'Picture yourself on a boat on a river...',
+    sample: 'They call me on and on across the universe',
     siteLink: 'https://fonts.google.com/specimen/Noto+Serif',
     downloadLink:
       'http://fonts.gstatic.com/s/notoserif/v6/ga6Iaw1J5X9T9RW6j9bNTFA.ttf'
@@ -323,7 +322,7 @@ const fonts = [
   {
     title: 'Rubik',
     type: 'sans',
-    sample: "That boy isn't good for you though he want you too",
+    sample: "That boy isn't good for you, though he may want you too",
     siteLink: 'https://fonts.google.com/specimen/Rubik',
     downloadLink: 'http://fonts.gstatic.com/s/rubik/v7/iJWKBXyIfDnIV4nG.ttf'
   },
@@ -348,7 +347,7 @@ const fonts = [
   {
     title: 'PT Serif',
     type: 'serif',
-    sample: 'Penny Lane is in my ear and in my eye',
+    sample: "And though she feel as if she's in a play, she is anyway",
     siteLink: 'https://fonts.google.com/specimen/PT+Serif',
     downloadLink:
       'http://fonts.gstatic.com/s/ptserif/v9/EJRVQgYoZZY2vCFuvDFR.ttf'
@@ -400,7 +399,7 @@ const fonts = [
   {
     title: 'Karla',
     type: 'sans',
-    sample: 'Come together, right now, over me.',
+    sample: 'Here come old flat-top, he come grooving up slowly',
     siteLink: 'https://fonts.google.com/specimen/Karla',
     downloadLink: 'http://fonts.gstatic.com/s/karla/v6/qkBbXvYC6trAT4RS.ttf'
   }

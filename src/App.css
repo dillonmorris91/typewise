@@ -80,6 +80,10 @@ button,
   margin: auto;
 }
 
+.App-title:hover {
+  cursor: pointer;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -107,6 +111,17 @@ button,
   cursor: pointer;
 }
 
+.active {
+  color: rgba(242, 38, 19, 0.65);
+  font-family: 'Open Sans';
+  width: 80px;
+  font-size: 1.2rem;
+}
+
+.active:last-child {
+  margin-right: 0.5rem;
+}
+
 .card-container {
   border-top: 3px solid #bfbfbf;
   margin-top: 6px;
@@ -121,6 +136,7 @@ button,
   margin: 10px 5px;
   padding-top: 10px;
   background-color: #fff;
+  border: 2px solid #ececec;
 }
 
 .card-title {
@@ -147,12 +163,11 @@ button,
   font-size: 1.8rem;
   margin-top: 1rem;
   font-weight: 400;
-  /* margin-bottom: 1rem; */
 }
 
 .card-btn {
   font-size: 0.8rem;
-  background-color: #d8d8d8;
+  background-color: rgba(242, 38, 19, 0.65);
   border: none;
   margin: 0px 6px;
   padding: 9px 22px;
@@ -163,7 +178,6 @@ button,
 }
 
 .card-btn:hover {
-  color: rgba(242, 38, 19, 0.65);
   cursor: pointer;
 }
 
@@ -200,18 +214,6 @@ a {
 
   .card-title {
     padding: 0.25rem 0 0 2rem;
-  }
-
-  .card-btn {
-    font-size: 0.8rem;
-    background-color: #d8d8d8;
-    border: none;
-    margin: 0px 6px;
-    padding: 9px 22px;
-    display: flex;
-    color: #fff;
-    font-weight: 800;
-    letter-spacing: 0.5px;
   }
 }
 
