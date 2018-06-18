@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
 import fonts from './data/fonts';
 import FontCard from './FontCard';
+import classNames from 'classnames';
+
+const filters = [
+  "sans",
+  "serif",
+  "display",
+]
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.handleAllFontsClick = this.handleAllFontsClick.bind(this);
-    this.handleSansClick = this.handleSansClick.bind(this);
-    this.handleSerifClick = this.handleSerifClick.bind(this);
-    this.handleDisplayClick = this.handleDisplayClick.bind(this);
-    this.state = { filteredFonts: [] };
+    this.handleFilterClick = this.handleFilterClick.bind(this);
+    this.state = {
+      filteredFonts: [],
+      activeFilter: null,
+    };
   }
 
   componentDidMount() {
@@ -22,25 +30,28 @@ class App extends Component {
     this.setState({ filteredFonts: allFontsArray });
   }
 
-  handleSansClick() {
-    const sansArray = fonts.filter(font => font.type === 'sans');
-    this.setState({ filteredFonts: sansArray });
+  handleFilterClick(filter) {
+    const displayArray = fonts.filter(font => font.type === filter);
+    this.setState({ filteredFonts: displayArray, activeFilter: filter });
   }
 
-  handleSerifClick() {
-    const serifArray = fonts.filter(font => font.type === 'serif');
-    this.setState({ filteredFonts: serifArray });
-  }
+  renderNavbarItems = () => {
+    const { activeFilter } = this.state;
 
-  handleDisplayClick() {
-    const displayArray = fonts.filter(font => font.type === 'display');
-    this.setState({ filteredFonts: displayArray });
+    return filters.map(filter => (
+      <span
+        key={filter}
+        className={classNames("navbar-item", {"navbar-item--active": activeFilter === filter})}
+        onClick={() => this.handleFilterClick(filter)}
+      >
+        {filter}
+      </span>
+    ))
   }
-
-  addActiveState() {}
 
   render() {
     const filteredFonts = this.state.filteredFonts;
+    const { activeFilter } = this.state;
 
     return (
       <div className="App">
@@ -53,15 +64,7 @@ class App extends Component {
           </p>
         </header>
         <div className="navbar">
-          <span className="navbar-item" onClick={this.handleSansClick}>
-            Sans
-          </span>
-          <span className="navbar-item" onClick={this.handleSerifClick}>
-            Serif
-          </span>
-          <span className="navbar-item" onClick={this.handleDisplayClick}>
-            Display
-          </span>
+          {this.renderNavbarItems()}
         </div>
         <div className="card-container">
           {filteredFonts.map(font => {

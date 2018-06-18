@@ -97,6 +97,7 @@ button,
   width: 80px;
   font-size: 1.2rem;
   color: #bfbfbf;
+  text-transform: capitalize;
 }
 
 .navbar-item:last-child {
@@ -111,7 +112,7 @@ button,
   cursor: pointer;
 }
 
-.active {
+.navbar-item--active {
   color: rgba(242, 38, 19, 0.65);
   font-family: 'Open Sans';
   width: 80px;
