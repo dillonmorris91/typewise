@@ -1,0 +1,21 @@
+{
+  "name": "typewise",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@dr-kobros/react-webfont-loader": "^8.0.0",
+    "classnames": "^2.2.6",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
