@@ -42,14 +42,13 @@ button,
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   padding-bottom: 1rem;
 }
 
 .App-header {
-  background-color: #f7f7f7;
+  background-color: #fff;
   height: 150px;
-  padding: 20px 0px 2rem 0rem;
+  padding: 60px 0px 0px 0px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -60,11 +59,11 @@ button,
   font-family: "Lato", sans-serif;
   font-size: 1.3rem;
   letter-spacing: 0.83px;
-  color: #627d98;
+  color: #829ab1;
   text-align: center;
   line-height: 1.4;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 10px 20px;
 }
 
 .App-title {
@@ -73,7 +72,7 @@ button,
   font-size: 48px;
   letter-spacing: 1px;
   text-align: center;
-  margin: 14px auto;
+  margin: 0px auto;
 }
 
 .App-title:hover {
@@ -82,24 +81,35 @@ button,
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: auto;
   width: 300px;
-  height: 4rem;
+  background-color: #fff;
+  border-radius: 32px;
+  margin-top: 30px;
 }
 
 .navbar-item {
   font-family: "Lato";
-  width: 80px;
-  font-size: 1.2rem;
-  color: #627d98;
+  font-size: 16px;
+  color: #829ab1;
   text-transform: capitalize;
   transition: 0.2s ease all;
+  padding: 20px 24px;
+  border-right: 2px solid #d9e2ec;
 }
 
 .navbar-item:last-child {
-  margin-right: 0.5rem;
+  border-right: none;
+}
+
+.navbar-item:first-child {
+  padding: 0px 24px;
+}
+
+.navbar-item:nth-child(2) {
+  padding: 0px 28px;
 }
 
 .navbar-item:hover,
@@ -112,8 +122,6 @@ button,
 
 .navbar-item--active {
   color: #2680c2;
-  width: 80px;
-  font-size: 1.2rem;
 }
 
 .active:last-child {
@@ -124,8 +132,7 @@ button,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 14px;
-  border-top: 2px solid #bcccdc;
-  padding: 1.5rem 2rem;
+  padding: 2rem 8px;
 }
 
 .card {
@@ -204,22 +211,39 @@ a {
 
 /* tablet/mobile media query  */
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   /* .App-title {
     width: 300px;
   } */
 
-  .App-header {
-    padding-bottom: 1rem;
+  .card-container {
+    padding: 2rem;
   }
-
-  /* .card-container {
-    display: flex;
-    padding: 1.25rem 0rem 0rem 3.5rem;
-  } */
 
   .card-title {
     padding: 0.25rem 0 0 2rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .card-container {
+    padding: 2rem;
+  }
+
+  .card-title {
+    padding: 0.25rem 0 0 2rem;
+  }
+
+  .navbar {
+    width: 340px;
+  }
+
+  .navbar-item {
+    font-size: 18px;
+  }
+
+  .navbar-item:nth-child(2) {
+    padding: 0px 36px;
   }
 }
 
